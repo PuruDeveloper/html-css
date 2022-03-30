@@ -1,0 +1,139 @@
+:root {
+  --green: rgb(121, 245, 80);
+  --dark-blue: rgb(57, 72, 241);
+  --big-font: 6em;
+  --medium-big-font: 3em;
+  --small-font: 1.2em;
+}
+
+body {
+  font-family: "Palette Mosiac", cursive;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+body,
+ul,
+h1,
+h2,
+h3,
+h4 h5,
+a,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background-color: var(--dark-blue);
+  border: none;
+  outline: none;
+  padding: 12px;
+  border-radius: 7px;
+}
+
+.app {
+  background-color: white;
+  width: 100%;
+}
+
+.home {
+  box-sizing: border-box;
+  background-color: var(--green);
+  padding: 20px 3rem;
+  color: white;
+  padding-bottom: 3em;
+}
+
+.home > h1 {
+  color: var(--dark-blue);
+  font-size: var(--medium-big-font);
+}
+
+.home-body {
+  display: flex;
+  padding-top: 2rem;
+  justify-content: space-between;
+  position: relative;
+}
+
+.home-left > h1 {
+  font-size: var(--big-font);
+}
+
+.home-left > span {
+  font-size: var(--small-font);
+}
+
+.home-right > img {
+  width: 300px;
+}
+
+.about {
+  background-color: white;
+  color: black;
+  padding: 20px 3rem;
+}
+.about > h1,
+.projects > h1,
+.experience > h1,
+.skills > h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: var(--medium-big-font);
+}
+
+.about > p,
+.projects > p,
+.experience > p,
+.skills > p {
+  font-size: var(--small-font);
+}
+
+.projects {
+  background-color: var(--green);
+  color: white;
+  padding: 20px 3rem;
+}
+.project-card {
+  min-height: 400px;
+  position: relative;
+  display: flex;
+}
+.project-img {
+  width: 600px;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.5s;
+  padding-right: 12px;
+}
+
+.experience {
+  background-color: white;
+  color: black;
+  padding: 20px 3rem;
+}
+
+.experience > table {
+  width: 100%;
+  text-align: center;
+}
+
+.experience > table > th {
+  font-weight: 600;
+  font-size: var(--small-font);
+}
+
+.skills {
+  background-color: var(--green);
+  color: white;
+  padding: 20px 3rem;
+}
+
+.contact {
+  padding: 20px 3rem;
+  border: 1px solid black;
+}
