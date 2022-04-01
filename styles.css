@@ -133,7 +133,48 @@ button {
   padding: 20px 3rem;
 }
 
+.skill-holder {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-items: center;
+  height: 60px;
+  position: relative;
+}
+
+.skill {
+  width: calc(100% - 70px);
+  height: 3px;
+  background-color: white;
+  position: relative;
+}
+.skill-text {
+  color: #00d084;
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 600;
+  letter-spacing: 5px;
+  position: relative;
+  z-index: 3;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 35px;
+  vertical-align: top;
+  display: inline-block;
+}
+.skill-fill {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 10%;
+  height: 60px;
+  transition: width 0.7s;
+  background-color: #fff;
+  max-width: 97%;
+  z-index: 2;
+}
 .contact {
   padding: 20px 3rem;
   border: 1px solid black;
+  text-align: center;
 }
